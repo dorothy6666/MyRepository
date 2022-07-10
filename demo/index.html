@@ -1,0 +1,62 @@
+<!DOCTYPE>
+<html>
+
+
+<head>
+    <title>最新情報</title>
+    <link rel="stylesheet" type="text/css" href="mainpage.css">
+</head>
+
+<body>
+
+    <div class="topimg">
+        <p>横浜、みなとの街歩きガイド</p>
+    </div>
+
+    <div id="banner">
+        <ul id="imglist">
+            <li><img src="01.png" </li>
+            <li><img src="02.png" </li>
+            <li><img src="03.png" </li>
+            <li><img src="04.png" </li>
+        </ul>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">最新情報</a></li>
+            <li><a href="albumpage.html" target="_blank">遊ぶ</a></li>
+            <li><a href="aboutmepage.html" target="_blank">食べる</a></li>
+            <li><a href="contactpage.html" target="_blank">泊まる</a></li>
+        </ul>
+    </nav>
+
+
+    <div>
+        <p>横浜は、近代日本の開国とともに江戸（東京）の玄関の港として発展してきました。<br>
+            異国情緒にあふれ、日本の他の街とは異なる独特の雰囲気がある横浜には、開放的な公園やおしゃれなレストラン、カフェ、そして世界最大級の中華街や歴史の息吹を<br>
+            感じる横浜赤レンガ倉庫など、魅力的な観光スポットがあふれています。<br>
+            また昼と夜、四季の移り変わりで雰囲気の変わる街の景観や、海、富士山といった日本らしい風景を楽しむこともできます。<br>
+            そして、歩き疲れても大丈夫。バス・電車・船・ロープウェイなど、充実した交通手段で簡単に移動できます。
+        </p>
+        <hr>
+    </div>
+
+    <div class="footer">
+        <p>copyright</p>
+    </div>
+
+    <script>
+        var left = 0;
+        var timer;
+        run();
+        function run() {
+            imglist.style.margininLeft = left + 'px';
+            left -= 10;
+            timer = setTimeout(run, 10)
+        }
+    </script>
+
+</body>
+
+</html>
